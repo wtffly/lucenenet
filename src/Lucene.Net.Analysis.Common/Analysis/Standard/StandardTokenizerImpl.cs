@@ -1343,10 +1343,10 @@ namespace Lucene.Net.Analysis.Standard
 
                 switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction])
                 {
-                    case 1:
-                        { // Break so we don't hit fall-through warning:
-                            break; // Not numeric, word, ideographic, hiragana, or SE Asian -- ignore it.
-                        }
+                    //case 1:
+                    //    { // Break so we don't hit fall-through warning:
+                    //        break; // Not numeric, word, ideographic, hiragana, or SE Asian -- ignore it.
+                    //    }
                         // goto case 9; // unreachable
                     case 9:
                         break;
@@ -1374,6 +1374,7 @@ namespace Lucene.Net.Analysis.Standard
                         }
                     case 13:
                         break;
+                    case 1:
                     case 6:
                         {
                             return IDEOGRAPHIC_TYPE;
